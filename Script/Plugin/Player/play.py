@@ -30,7 +30,7 @@ from Script.Cache.YouTubeDL import yt_audio, yt_video
 LIVE_CHATS = []
 
 @bot.on_message(filters.command(["play", "vplay"]) & filters.group)
-async def play(_, message, c: Client):
+async def play(message: Message, c: Client):
     await message.delete()
     user_id = message.from_user.id
     admins = await is_admin(message.chat)
