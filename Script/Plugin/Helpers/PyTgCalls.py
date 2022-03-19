@@ -13,7 +13,7 @@ from pytgcalls.types import Update
 from pytgcalls.types.stream import StreamAudioEnded, StreamVideoEnded
 from pyrogram.raw.base import Update
 from pytgcalls import PyTgCalls
-
+from .inline import BUTTONS
 
 async def skip_current_song(chat_id):
     if chat_id in QUEUE:
