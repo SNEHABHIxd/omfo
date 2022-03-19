@@ -26,7 +26,9 @@ from Script.assistant.TgCalls.Clients import bot, user, abhi
 from Script.Plugin.Helpers.inline import BUTTONS
 from Script.Cache.YouTubeDL import yt_audio, yt_video
 
-
+with abhi as app:
+    me_user = app.get_me()
+    
 LIVE_CHATS = []
 
 @bot.on_message(filters.command(["play", "vplay"]) & filters.group)
