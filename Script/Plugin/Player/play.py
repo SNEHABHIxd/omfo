@@ -33,7 +33,7 @@ LIVE_CHATS = []
 async def play(c: Client, message: Message):
     await message.delete()
     user_id = message.from_user.id
-    admins = await is_admin(message.chat)
+    
     state = message.command[0].lower()
     try:
         query = message.text.split(None, 1)[1]
