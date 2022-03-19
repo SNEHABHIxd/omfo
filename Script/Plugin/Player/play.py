@@ -48,8 +48,8 @@ async def play(_, message, c: Client):
         )
     try:
         ubot = me_user.id
-        abhi = await c.get_chat_member(chat_id, ubot)
-        if abhi.status == "banned":
+        blaze = await c.get_chat_member(chat_id, ubot)
+        if blaze.status == "banned":
             try:
                 await message.reply_text("❌ The userbot is banned in this chat, unban the userbot first to be able to play music !")
                 await remove_active_chat(chat_id)
