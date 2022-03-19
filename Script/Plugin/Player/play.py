@@ -25,7 +25,7 @@ from Script.Cache.admin_check import *
 from Script.assistant.TgCalls.Clients import bot, user, abhi
 from Script.Plugin.Helpers.inline import BUTTONS
 from Script.Cache.YouTubeDL import yt_audio, yt_video
-from Script.assistant.Keyboard.Connect import me_abhi
+from Script.assistant.TgCalls.Clients import me_abhi
 
     
 LIVE_CHATS = []
